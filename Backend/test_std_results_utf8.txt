@@ -1,0 +1,18 @@
+﻿Loading model...
+
+colonca1.jpeg:
+  Std predict : Idx=1  Probs=[0.0, 1.0, 0.0, 0.0, 0.0]
+
+colonn1.jpeg:
+  Std predict : Idx=1  Probs=[0.0, 1.0, 0.0, 0.0, 0.0]
+
+lungaca1.jpeg:
+  Std predict : Idx=1  Probs=[0.0, 1.0, 0.0, 0.0, 0.0]
+
+lungn1.jpeg:
+  Std predict : Idx=1  Probs=[0.0023, 0.9977, 0.0, 0.0, 0.0]
+
+lungscc1.jpeg:
+  Std predict : Idx=0  Probs=[0.9442, 0.0558, 0.0, 0.0, 0.0]
+
+DONE

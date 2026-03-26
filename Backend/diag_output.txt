@@ -1,0 +1,46 @@
+Input shape : (None, 224, 224, 3)
+Output shape: (None, 5)
+
+=== Testing with 20 varied synthetic images (/255 preprocessing) ===
+  img0: class=0, probs=[0.929403, 0.070594, 0.000002, 0.000001, 0.000001]
+  img1: class=0, probs=[0.935114, 0.064883, 0.000002, 0.000001, 0.000001]
+  img2: class=0, probs=[0.938349, 0.061647, 0.000002, 0.000001, 0.000001]
+  img3: class=0, probs=[0.932638, 0.067359, 0.000002, 0.000001, 0.000001]
+  img4: class=0, probs=[0.934168, 0.065829, 0.000001, 0.000001, 0.000001]
+  img5: class=0, probs=[0.935855, 0.064143, 0.000001, 0.000001, 0.000001]
+  img6: class=0, probs=[0.933418, 0.066578, 0.000002, 0.000001, 0.000001]
+  img7: class=0, probs=[0.961911, 0.038087, 0.000001, 0.000001, 0.000001]
+  img8: class=0, probs=[0.963634, 0.036364, 0.000001, 0.000000, 0.000000]
+  img9: class=0, probs=[0.994968, 0.005032, 0.000000, 0.000000, 0.000000]
+  img10: class=0, probs=[0.973791, 0.026207, 0.000001, 0.000000, 0.000000]
+  img11: class=0, probs=[0.984103, 0.015896, 0.000000, 0.000000, 0.000000]
+  img12: class=0, probs=[0.969362, 0.030636, 0.000001, 0.000001, 0.000001]
+  img13: class=0, probs=[0.991552, 0.008448, 0.000000, 0.000000, 0.000000]
+  img14: class=0, probs=[0.932205, 0.067791, 0.000002, 0.000001, 0.000001]
+  img15: class=0, probs=[0.911017, 0.088977, 0.000003, 0.000001, 0.000001]
+  img16: class=0, probs=[0.975596, 0.024403, 0.000001, 0.000000, 0.000000]
+  img17: class=0, probs=[0.660807, 0.339188, 0.000003, 0.000001, 0.000001]
+  img18: class=0, probs=[0.961324, 0.038674, 0.000001, 0.000001, 0.000001]
+  img19: class=0, probs=[0.986865, 0.013135, 0.000000, 0.000000, 0.000000]
+
+Class distribution: {0: 20}
+
+=== Last layer (output) info ===
+Layer name: dense_2
+Config: {'name': 'dense_2', 'trainable': True, 'dtype': {'module': 'keras', 'class_name': 'DTypePolicy', 'config': {'name': 'float32'}, 'registered_name': None}, 'units': 5, 'activation': 'softmax', 'use_bias': True, 'kernel_initializer': {'module': 'keras.initializers', 'class_name': 'GlorotUniform', 'config': {'seed': None}, 'registered_name': None}, 'bias_initializer': {'module': 'keras.initializers', 'class_name': 'Zeros', 'config': {}, 'registered_name': None}, 'kernel_regularizer': None, 'bias_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None, 'quantization_config': None}
+Weight shapes: [(812, 5), (5,)]
+Output biases: [0.018053, -0.004608, -0.023835, -0.067196, -0.047831]
+Highest bias at index: 0  (0.018053)
+Lowest bias at index: 3  (-0.067196)
+
+=== Testing with color-biased images (/255 preprocessing) ===
+  red     : class=1, probs=[0.0440, 0.9560, 0.0000, 0.0000, 0.0000]
+  green   : class=1, probs=[0.0005, 0.9995, 0.0000, 0.0000, 0.0000]
+  blue    : class=0, probs=[0.9520, 0.0480, 0.0000, 0.0000, 0.0000]
+  pink    : class=1, probs=[0.0251, 0.9749, 0.0000, 0.0000, 0.0000]
+  purple  : class=1, probs=[0.0311, 0.9689, 0.0000, 0.0000, 0.0000]
+  brown   : class=1, probs=[0.0080, 0.9920, 0.0000, 0.0000, 0.0000]
+  white   : class=1, probs=[0.0542, 0.9458, 0.0000, 0.0000, 0.0000]
+  gray    : class=1, probs=[0.0128, 0.9872, 0.0000, 0.0000, 0.0000]
+
+DONE

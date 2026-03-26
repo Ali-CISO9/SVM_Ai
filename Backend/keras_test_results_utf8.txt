@@ -1,0 +1,23 @@
+﻿Loading model...
+
+colonca1.jpeg:
+  Rescale predict : Idx=0  Probs=[1.0, 0.0, 0.0, 0.0, 0.0]
+  VGG16 predict   : Idx=1  Probs=[0.0, 1.0, 0.0, 0.0, 0.0]
+
+colonn1.jpeg:
+  Rescale predict : Idx=1  Probs=[0.0, 1.0, 0.0, 0.0, 0.0]
+  VGG16 predict   : Idx=1  Probs=[0.0, 1.0, 0.0, 0.0, 0.0]
+
+lungaca1.jpeg:
+  Rescale predict : Idx=0  Probs=[1.0, 0.0, 0.0, 0.0, 0.0]
+  VGG16 predict   : Idx=1  Probs=[0.0, 1.0, 0.0, 0.0, 0.0]
+
+lungn1.jpeg:
+  Rescale predict : Idx=1  Probs=[0.0001, 0.9999, 0.0, 0.0, 0.0]
+  VGG16 predict   : Idx=1  Probs=[0.0, 1.0, 0.0, 0.0, 0.0]
+
+lungscc1.jpeg:
+  Rescale predict : Idx=0  Probs=[1.0, 0.0, 0.0, 0.0, 0.0]
+  VGG16 predict   : Idx=1  Probs=[0.0, 1.0, 0.0, 0.0, 0.0]
+
+DONE

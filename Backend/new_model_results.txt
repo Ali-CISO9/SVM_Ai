@@ -1,0 +1,15 @@
+﻿Loading model from C:\Users\Ali-IT\Desktop\SVM_Ai-main\backend\Model\my_cancer_detection_model.keras...
+Found 5 test images. Running predictions...
+
+File: colonca1.jpeg                  | Predicted Index: 0 | Confidence: 1.0000
+      Probs: [1.0, 0.0, 0.0, 0.0, 0.0]
+File: colonn1.jpeg                   | Predicted Index: 1 | Confidence: 1.0000
+      Probs: [0.0, 1.0, 0.0, 0.0, 0.0]
+File: lungaca1.jpeg                  | Predicted Index: 2 | Confidence: 0.9994
+      Probs: [0.0, 0.0, 0.9994, 0.0006, 0.0]
+File: lungn1.jpeg                    | Predicted Index: 4 | Confidence: 1.0000
+      Probs: [0.0, 0.0, 0.0, 0.0, 1.0]
+File: lungscc1.jpeg                  | Predicted Index: 3 | Confidence: 1.0000
+      Probs: [0.0, 0.0, 0.0, 1.0, 0.0]
+
+DONE

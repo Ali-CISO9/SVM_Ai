@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MediScan AI</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#19c3e6",
+                        "background-dark": "#02040a",
+                        "slate-custom": "#0f172a",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    animation: {
+                        'scan': 'scan 3s linear infinite',
+                    },
+                    keyframes: {
+                        scan: {
+                            '0%': { top: '0%', opacity: '0' },
+                            '5%': { opacity: '1' },
+                            '95%': { opacity: '1' },
+                            '100%': { top: '100%', opacity: '0' },
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        :root {
+            --bg-midnight: #02040a;
+            --deep-blue-glow: #0a1428;
+            --primary-glow: rgba(25, 195, 230, 0.08);
+        }
+        
+        body {
+            background-color: var(--bg-midnight);
+            color: white;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+        }
+
+        .grain-overlay {
+            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCwe6YCMBI87l3_bXDQek5DazaWa8iTz8CS2wD2QZGB7l5GZ--60gUuyONHgfvyFzOi_Gu3IHC6EtVkkR8ugnT0FEJXjEzg5qz-IBFB_OQiWYjep2tdpIi0lgpBZifJXQJY0GJQTBlF71_g7DzGc-yP8eJWvXcQDczXsxZIl2VFCKVIbKXK_XgjQYUfqbtBOveTkCuGy0xVMB1z_haQsctujaXmsl7sfhZq_BnWv_fSBbzttDTH9pTlffoWSv-u5Y-6CY_d97Chb8c');
+            background-repeat: repeat;
+            opacity: 0.06;
+            pointer-events: none;
+            mix-blend-mode: overlay;
+        }
+
+        .moody-bg {
+            background: 
+                radial-gradient(circle at 50% -20%, var(--deep-blue-glow) 0%, transparent 70%),
+                radial-gradient(circle at 85% 10%, var(--primary-glow) 0%, transparent 40%),
+                radial-gradient(circle at 15% 90%, var(--primary-glow) 0%, transparent 40%),
+                linear-gradient(to bottom, #05070a 0%, #02040a 100%);
+        }
+
+        .conical-light {
+            background: conic-gradient(from 180deg at 50% 0%, transparent 155deg, rgba(25, 195, 230, 0.03) 180deg, transparent 205deg);
+            filter: blur(80px);
+        }
+
+        .scanning-line {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #19c3e6, transparent);
+            box-shadow: 0 0 15px 2px #19c3e6;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 20;
+        }
+        
+        .paused-scan {
+            animation-play-state: paused;
+            opacity: 0.5;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
